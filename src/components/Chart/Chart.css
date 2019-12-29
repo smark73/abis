@@ -1,0 +1,70 @@
+.chart {
+  position: relative;
+  box-sizing: border-box;
+  /*margin-top: 100px;*/
+  /*position: relative;*/
+  /*background: #f5f5f5;*/
+/*  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;*/
+  z-index: 0;
+  background: #f5f5f5;
+  height: 1500px;
+  border: 1px solid black;
+}
+
+.chart__chart {
+  height: 1000px;
+}
+
+/***** PAGE HEADER ******/
+
+.chart__hdr-wrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: calc(1em + 1vmin);
+  background: 
+    -webkit-linear-gradient(45deg, rgba(19,19,19,.2) 0%, rgba(19,19,19,.1) 30%, rgba(19,19,19,.05) 100%),
+    -webkit-radial-gradient(rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%),
+    -webkit-linear-gradient(top, rgba(208,240,79,0) 0%, rgba(208,240,79,.1) 100%),
+    rgba(245,245,245,.8);
+  background: 
+    linear-gradient(45deg, rgba(19,19,19,.2) 0%, rgba(19,19,19,.1) 30%, rgba(19,19,19,.05) 100%),
+    radial-gradient(rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%),
+    linear-gradient(to bottom, rgba(208,240,79,0) 0%, rgba(208,240,79,.1) 100%),
+    rgba(245,245,245,.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #AECAC9;
+}
+.chart__hdr {
+  font-size: calc(1.2em + 1vmin);
+  padding-top: 20px;
+}
+
+.chart__hdr-hdr {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-style: italic;
+  color: #000000;
+  padding: 5px;
+  background: 
+    -webkit-gradient(linear, left top, left bottom, from(#cc0000), color-stop(30%, #cc0000), to(#000));
+  background: 
+    -webkit-linear-gradient(top, #cc0000 0%, #cc0000 30%, #000 100%);
+  background: 
+    linear-gradient(to bottom, #cc0000 0%, #cc0000 30%, #000 100%);
+  background:
+    -webkit-linear-gradient(to bottom, #cc0000 0%, #3f3f53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chart__hdr-txt {
+  padding: 0 calc(10 * 1.5vw);
+  margin: auto;
+  color: #628a88;
+}
+
