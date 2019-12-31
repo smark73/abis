@@ -9,11 +9,7 @@ const Footer = () => {
 
       <div className="footer">
 
-        <div className="footer__grid">
-          <div className="footer__grid-item">
-            <p>asdfasdfasdf</p>
-          </div>
-        </div>
+        <p>ABIS Test Project | ReactJS with AM Charts</p>
 
       </div>
 

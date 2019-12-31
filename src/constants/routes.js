@@ -1,3 +1,2 @@
-export const HOME = '/';
-export const CHART = '/CHART';
-
+export const DEVICES = '/';
+export const CONTACT = '/contact-us';

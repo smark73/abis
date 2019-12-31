@@ -1,0 +1,25 @@
+.device-options-wrap {
+  /* height: 100px; */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.device-options {
+  text-align: center;
+  padding: 2vw;
+}
+
+.device-options label {
+  font-family: "Roboto Condensed";
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dev-options__dev {}
+
+.dev-options__serv {}
+
+.dev-options__met {}
+
+.dev-options__btn {}
