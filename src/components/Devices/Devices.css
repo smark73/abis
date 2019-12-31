@@ -1,7 +1,11 @@
 .device-options-wrap {
-  /* height: 100px; */
-  max-width: 100%;
-  overflow: hidden;
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .device-options {
@@ -23,3 +27,26 @@
 .dev-options__met {}
 
 .dev-options__btn {}
+
+
+@media only screen and (max-width: 1199px) {
+  .device-options-wrap {
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .device-options-wrap {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .device-options-wrap {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+
+}

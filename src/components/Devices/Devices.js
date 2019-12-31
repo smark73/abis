@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown } from 'reactstrap';
+import { Button } from 'reactstrap';
 import './Devices.css';
 import CPUMetrics from '../Metrics/CPUMetrics';
 import NetworkMetrics from '../Metrics/NetworkMetrics';
@@ -51,8 +51,8 @@ class Devices extends Component {
 
       <div className="device-options-wrap">
 
-          <Row>
-            <Col md="3" sm="6" className="device-options device-options__dev">
+
+            <div className="device-options device-options__dev">
               <label>Your Devices</label><br/>
               <select name="device" onChange={this.props.setDevice}>
                 <option value="" defaultValue>Select Device</option>
@@ -60,9 +60,9 @@ class Devices extends Component {
                 <option value="logic-dev-02">Device 2</option>
               </select>
 
-            </Col>
+            </div>
 
-            <Col md="3" sm="6" className="device-options device-options__serv">
+            <div className="device-options device-options__serv">
               <label>Monitor Service</label><br/>
               {
                 this.props.deviceSelected
@@ -80,9 +80,9 @@ class Devices extends Component {
                 )
               }
 
-            </Col>
+            </div>
 
-            <Col md="3" sm="6" className="device-options device-options__met">
+            <div className="device-options device-options__met">
 
               {
                 this.props.serviceSelected
@@ -99,9 +99,9 @@ class Devices extends Component {
               }
 
 
-            </Col>
+            </div>
 
-            <Col md="3" sm="6" className="device-options device-options__btn">
+            <div className="device-options device-options__btn">
             {
                 this.props.deviceSelected && this.props.serviceSelected && this.props.metricSelected
                 ? (
@@ -112,8 +112,7 @@ class Devices extends Component {
                 )
             }
 
-            </Col>
-          </Row>
+            </div>
 
       </div>
 
